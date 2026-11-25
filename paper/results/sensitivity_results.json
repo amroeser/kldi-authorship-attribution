@@ -1,0 +1,213 @@
+{
+ "HH": {
+  "n": 200,
+  "min": -0.0,
+  "q1": 6.047,
+  "med": 28.049,
+  "q3": 28.971,
+  "max": 29.132,
+  "iqr": 22.925,
+  "T": 63.358
+ },
+ "HA": {
+  "n": 500,
+  "min": 0.2,
+  "q1": 5.605,
+  "med": 13.229,
+  "q3": 18.126,
+  "max": 29.219,
+  "iqr": 12.52,
+  "T": 36.906
+ },
+ "AUC_inv_main": 0.741,
+ "first_vs_min": {
+  "auc_inv_first": 0.738,
+  "auc_inv_min": 0.741,
+  "mean_first": 12.984,
+  "mean_min": 12.489,
+  "share_changed": 0.22,
+  "max_ha_first": 29.219
+ },
+ "distinct_texts": 170,
+ "distinct_by_domain": {
+  "law": 73,
+  "medical": 7,
+  "news": 13,
+  "poetry": 77
+ },
+ "HH_rebuilt_random_distinct_10seeds": {
+  "T_mean": 31.39,
+  "T_range": [
+   31.14,
+   31.54
+  ],
+  "AUC_inv_all500_mean": 0.995,
+  "AUC_inv_all500_range": [
+   0.993,
+   0.996
+  ],
+  "AUC_inv_dedupHA_mean": 0.991,
+  "AUC_inv_dedupHA_range": [
+   0.988,
+   0.992
+  ],
+  "HHmin": 16.62,
+  "HHmax": 29.84
+ },
+ "HH_excl_identical": {
+  "n": 156,
+  "min": 6.047,
+  "q1": 28.049,
+  "med": 28.132,
+  "q3": 28.971,
+  "max": 29.132,
+  "iqr": 0.922,
+  "T": 30.354,
+  "AUC_inv": 0.949,
+  "AUC_inv_dedupHA": 0.933,
+  "above_T": 0
+ },
+ "per_domain": {
+  "law": {
+   "n_HA": 150,
+   "n_distinct": 73,
+   "n_HH": 50,
+   "HA_med": 13.5,
+   "HH_med": 28.13,
+   "AUC_inv": 0.691,
+   "AUC_inv_dedup": 0.69
+  },
+  "medical": {
+   "n_HA": 151,
+   "n_distinct": 7,
+   "n_HH": 50,
+   "HA_med": 7.72,
+   "HH_med": 28.05,
+   "AUC_inv": 0.72,
+   "AUC_inv_dedup": 0.72
+  },
+  "news": {
+   "n_HA": 48,
+   "n_distinct": 13,
+   "n_HH": 50,
+   "HA_med": 16.51,
+   "HH_med": 28.97,
+   "AUC_inv": 0.92,
+   "AUC_inv_dedup": 0.92
+  },
+  "poetry": {
+   "n_HA": 151,
+   "n_distinct": 77,
+   "n_HH": 50,
+   "HA_med": 12.6,
+   "HH_med": 28.97,
+   "AUC_inv": 0.665,
+   "AUC_inv_dedup": 0.588
+  }
+ },
+ "equal_weight_AUC_inv": 0.749,
+ "HH_all_distinct_ordered_pairs": {
+  "n": 11306,
+  "min": -0.0,
+  "q1": 27.399,
+  "med": 28.147,
+  "q3": 28.696,
+  "max": 29.838,
+  "iqr": 1.297,
+  "T": 30.642
+ },
+ "AUC_inv_cluster_point": 0.994,
+ "AUC_inv_cluster_boot_95CI": [
+  0.984,
+  0.999
+ ],
+ "sensitivity_nonidentical_HH": {
+  "kl_eps1e-10": {
+   "HA_med": 13.229,
+   "HH_med": 28.132,
+   "AUC_separating": 0.949,
+   "T_tukey": 30.35,
+   "HA_above_T": 0,
+   "HH_max": 29.13,
+   "HA_max": 29.22
+  },
+  "kl_eps1e-06": {
+   "HA_med": 7.009,
+   "HH_med": 14.844,
+   "AUC_separating": 0.948,
+   "T_tukey": 17.07,
+   "HA_above_T": 0,
+   "HH_max": 15.84,
+   "HA_max": 15.93
+  },
+  "kl_eps0.001": {
+   "HA_med": 2.393,
+   "HH_med": 4.975,
+   "AUC_separating": 0.946,
+   "T_tukey": 7.08,
+   "HA_above_T": 0,
+   "HH_max": 5.92,
+   "HA_max": 6.01
+  },
+  "jsd": {
+   "HA_med": 0.47,
+   "HH_med": 1.0,
+   "AUC_separating": 0.944,
+   "T_tukey": 1.0,
+   "HA_above_T": 0,
+   "HH_max": 1.0,
+   "HA_max": 1.0
+  },
+  "tv": {
+   "HA_med": 0.509,
+   "HH_med": 1.0,
+   "AUC_separating": 0.947,
+   "T_tukey": 1.0,
+   "HA_above_T": 0,
+   "HH_max": 1.0,
+   "HA_max": 1.0
+  },
+  "bigram_overlap": {
+   "HA_med": 0.347,
+   "HH_med": 0.0,
+   "AUC_separating": 0.946,
+   "T_tukey": 0.0,
+   "HA_above_T": null,
+   "HH_max": 0.68,
+   "HA_max": 0.97
+  }
+ },
+ "length": {
+  "HA_src_words_med": 29.0,
+  "HA_src_words_min_max": [
+   12,
+   43
+  ],
+  "HA_src_bigrams_med": 33.0,
+  "HA_src_bigrams_min_max": [
+   14,
+   52
+  ],
+  "HA_bigram_overlap_med": 0.347,
+  "HH_bigram_overlap_med": 0.0,
+  "HH_share_zero_overlap": 0.833
+ },
+ "ceiling_bits": 33.22,
+ "law_passages_with_german_markers": 39,
+ "urls": {
+  "www.gesetze-im-internet.de....de/gg/BJNR000010949.html": 39,
+  "eur-lex.europa.eu...TXT/?uri=CELEX:12012E/TXT": 46,
+  "www.archives.gov...s/constitution-transcript": 41,
+  "www.law.cornell.edu...ll.edu/wex/bill_of_rights": 24,
+  "www.afro.who.int...-06/9789241565158_eng.pdf": 47,
+  "stacks.cdc.gov...c/84012/cdc_84012_DS1.pdf": 45,
+  "www.ecdc.europa.eu...17-Zika-virus-disease.pdf": 32,
+  "chlaep.org.uy...eporte-Global-TB-2017.pdf": 27,
+  "web.archive.org.../https://www.bbc.com/news": 48,
+  "www.gutenberg.org...b/1041/pg1041-images.html": 32,
+  "www.gutenberg.org...pub/985/pg985-images.html": 43,
+  "www.gutenberg.org...b/1065/pg1065-images.html": 35,
+  "www.gutenberg.org...57137/pg57137-images.html": 41
+ },
+ "AUC_inv_dedupHA_origHH": 0.727
+}

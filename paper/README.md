@@ -73,3 +73,9 @@ data analysis.
 
 The data in this folder (excluding third-party source texts, which remain under the
 terms of their respective sources) is released under CC BY 4.0.
+
+## Sensitivity analyses (revision)
+
+`scripts/sensitivity_analyses.py` computes the sensitivity analyses reported in Section 4.3 of the revised paper: first-candidate vs. minimum-KLDI score, one observation per distinct source text, Human→Human reference without identical pairs and rebuilt by seeded random pairing of distinct texts, cluster bootstrap over source texts, additive-constant sensitivity, Jensen–Shannon divergence, total variation distance, bigram overlap, and per-domain AUCs. The output is stored in `results/sensitivity_results.json`.
+
+The script needs the full source texts. The numbers were computed from the unredacted texts; with this public release, in which 75 passages are redacted, the script stops with an error. The aggregate results can be inspected in the JSON file. Dependencies: `numpy scipy scikit-learn nltk`.
